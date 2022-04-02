@@ -69,3 +69,10 @@ manifest.mf
 nbbuild.xml
 nbproject
 *.DESKTOP-9LRJ967.dnkov.workspace
+lab-2/Project Backups/
+*.bin
+*.exe.config
+*.pdb
+*.vshost.exe
+*.cache
+Project Backups/
