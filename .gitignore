@@ -76,3 +76,7 @@ lab-2/Project Backups/
 *.vshost.exe
 *.cache
 Project Backups/
+lab-2/WindowsFormsApplication1/.vs/
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/bin/Release/WindowsFormsApplication1.vshost.exe.manifest
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/obj/
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/Properties/

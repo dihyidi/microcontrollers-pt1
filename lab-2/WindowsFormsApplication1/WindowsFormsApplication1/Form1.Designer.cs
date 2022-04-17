@@ -45,14 +45,15 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelM.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(25, 85);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
@@ -65,7 +66,7 @@
             // 
             // panelM
             // 
-            this.panelM.BackColor = System.Drawing.Color.SkyBlue;
+            this.panelM.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panelM.Controls.Add(this.label1);
             this.panelM.Controls.Add(this.comboBox1);
             this.panelM.Controls.Add(this.buttonOpenPort);
@@ -73,7 +74,7 @@
             this.panelM.Location = new System.Drawing.Point(0, 0);
             this.panelM.Margin = new System.Windows.Forms.Padding(4);
             this.panelM.Name = "panelM";
-            this.panelM.Size = new System.Drawing.Size(433, 48);
+            this.panelM.Size = new System.Drawing.Size(431, 48);
             this.panelM.TabIndex = 19;
             // 
             // label1
@@ -83,7 +84,7 @@
             this.label1.Location = new System.Drawing.Point(23, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 24);
+            this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 7;
             this.label1.Text = "COM порт";
             // 
@@ -94,9 +95,8 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.MaxDropDownItems = 10;
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(116, 32);
+            this.comboBox1.Size = new System.Drawing.Size(116, 26);
             this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // buttonOpenPort
@@ -108,7 +108,7 @@
             this.buttonOpenPort.Size = new System.Drawing.Size(117, 31);
             this.buttonOpenPort.TabIndex = 5;
             this.buttonOpenPort.Tag = "1";
-            this.buttonOpenPort.Text = "Open";
+            this.buttonOpenPort.Text = "Відкрити";
             this.buttonOpenPort.UseVisualStyleBackColor = true;
             this.buttonOpenPort.Click += new System.EventHandler(this.buttonOpenPort_Click);
             // 
@@ -118,7 +118,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SkyBlue;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(251, 85);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -132,33 +132,30 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(270, 229);
+            this.panel3.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel3.Location = new System.Drawing.Point(123, 226);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(40, 37);
             this.panel3.TabIndex = 28;
-            this.panel3.Visible = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(318, 229);
+            this.panel2.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel2.Location = new System.Drawing.Point(75, 226);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(40, 37);
             this.panel2.TabIndex = 27;
-            this.panel2.Visible = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(366, 229);
+            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.Location = new System.Drawing.Point(27, 226);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(40, 37);
             this.panel1.TabIndex = 26;
-            this.panel1.Visible = false;
             // 
             // timer1
             // 
@@ -167,63 +164,64 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(222, 229);
+            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel4.Location = new System.Drawing.Point(171, 226);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(40, 37);
             this.panel4.TabIndex = 29;
-            this.panel4.Visible = false;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(171, 229);
+            this.panel5.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel5.Location = new System.Drawing.Point(219, 226);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(40, 37);
-            this.panel5.TabIndex = 29;
-            this.panel5.Visible = false;
+            this.panel5.TabIndex = 30;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(123, 229);
+            this.panel6.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel6.Location = new System.Drawing.Point(267, 226);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(40, 37);
-            this.panel6.TabIndex = 29;
-            this.panel6.Visible = false;
+            this.panel6.TabIndex = 31;
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(75, 229);
+            this.panel7.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel7.Location = new System.Drawing.Point(315, 226);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(40, 37);
-            this.panel7.TabIndex = 29;
-            this.panel7.Visible = false;
+            this.panel7.TabIndex = 32;
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Black;
-            this.panel8.Location = new System.Drawing.Point(27, 229);
+            this.panel8.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel8.Location = new System.Drawing.Point(363, 226);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(40, 37);
-            this.panel8.TabIndex = 30;
-            this.panel8.Visible = false;
+            this.panel8.TabIndex = 29;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 321);
+            this.BackColor = System.Drawing.Color.Yellow;
+            this.ClientSize = new System.Drawing.Size(431, 313);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -235,11 +233,9 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelM.ResumeLayout(false);
             this.panelM.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -254,12 +250,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
