@@ -6,11 +6,11 @@ char KP_BUTTONS[4][4] = {
     {'4', '5', '6', 'B'},
     {'7', '8', '9', 'C'},
     {'*', '0', '#', 'D'}};
-byte kp_row_pins[4] = {22, 23, 24, 25};
-byte kp_col_pins[4] = {26, 27, 28, 29};
+byte kp_row_pins[4] = {37, 36, 35, 34};
+byte kp_col_pins[4] = {33, 32, 31, 30};
 Keypad my_keypad = Keypad(makeKeymap(KP_BUTTONS), kp_row_pins, kp_col_pins, 4, 4);
 
-const int rs = 40, rw = 39, en = 38, d0 = 30, d1 = 31, d2 = 32, d3 = 33, d4 = 34, d5 = 35, d6 = 36, d7 = 37;
+const int rs = 41, rw = 40, en = 39, d0 = 22, d1 = 23, d2 = 24, d3 = 25, d4 = 26, d5 = 27, d6 = 28, d7 = 29;
 LiquidCrystal lcd(rs, rw, en, d0, d1, d2, d3, d4, d5, d6, d7);
 
 const int BUZZER_PIN = 8;
@@ -236,6 +236,7 @@ void react(KeypadEvent e)
     }
     else if (e == '*')
     {
+      memset(time_buffer, '\0', curr_pos * sizeof(Time));
       curr_pos = 0;
       lcd.setCursor(0, 1);
       digitalWrite(BUZZER_PIN, HIGH);
