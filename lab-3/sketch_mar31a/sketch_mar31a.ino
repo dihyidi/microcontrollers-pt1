@@ -291,12 +291,7 @@ void react(KeypadEvent e)
         break;
       }
       default:
-      { // будь-яка цифра
-        // перша цифра: 3
-        // друга цифра: keypad: e = '5'
-        // 3 * 10 = 30
-        // але int(e) =/= 5! int(e) = 53, тому що ASCII(5) = 53
-        // 53 - 48 = 5 ====> 30 + 5 = 35
+      {
         number_from_input *= 10;
         number_from_input += (int(e) - 48);
         lcd.setCursor(0, 1);
