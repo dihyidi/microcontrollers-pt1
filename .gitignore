@@ -68,3 +68,11 @@ avr-toolchain-*.zip
 manifest.mf
 nbbuild.xml
 nbproject
+Project Backups
+*.workspace
+.vs
+*/build
+*/*/.vscode/
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/obj/
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/Properties/
+lab-2/WindowsFormsApplication1/WindowsFormsApplication1/bin/
