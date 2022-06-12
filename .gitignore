@@ -79,3 +79,6 @@ lab-2/WindowsFormsApplication1/WindowsFormsApplication1/bin/
 lab-6/Client/Client/obj/Debug/
 lab-6/Client/Client/obj/
 lab-6/Client/Client/Properties/
+lab-7/Client/Client/obj/
+lab-7/Client/Client/Properties/
+*.user
